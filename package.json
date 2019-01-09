@@ -1,0 +1,32 @@
+{
+  "name": "godspeedgames",
+  "version": "1.0.0",
+  "description": "assignment by gsg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darshanan24/gsg.git"
+  },
+  "keywords": [
+    "user",
+    "authentication",
+    "login",
+    "signup"
+  ],
+  "author": "darshan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darshanan24/gsg/issues"
+  },
+  "homepage": "https://github.com/darshanan24/gsg#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.2",
+    "nodemon": "^1.18.9"
+  }
+}
