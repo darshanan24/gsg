@@ -116,4 +116,21 @@ router.delete("/:userId", (req, res, next) => {
     });
 });
 
+router.post("/:userId/edit", (req, res, next) =>{
+    const userId = req.params.userId;
+    const updateUser = (user) => {
+        Object.assign(user, req.body);
+        user.save().then(() => {
+            res.json({
+                _id: userId.id,
+                username: user.username,
+                password:user.password,
+                email:user.email
+            });
+})
+
+    }});
+
+
+
 module.exports = router;
